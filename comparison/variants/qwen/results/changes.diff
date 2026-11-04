@@ -1,0 +1,39 @@
+--- original/RumBottle.java
++++ qwen/RumBottle.java
+@@ -25,11 +25,32 @@
+     }
+ 
+     public void consume(Person user, int amount) throws InsufficientRumException {
+-        requireOwner(user);
+-        if (amount <= 0) throw new IllegalArgumentException("Порция должна быть положительной");
+-        if (amount > volume) throw new InsufficientRumException(amount, volume);
++        // 1. Владелец (включая null)
++        if (user == null || !owner.equals(user)) {
++            throw new IllegalArgumentException("Пользователь не является владельцем бутылки");
++        }
++
++        // 2. Положительность amount
++        if (amount <= 0) {
++            throw new IllegalArgumentException("Объём потребления должен быть положительным");
++        }
++
++        // 3. Достаточность рома
++        if (amount > volume) {
++            throw new InsufficientRumException(amount, volume);
++        }
++
++        // 4. Списание (атомарно для однопоточной модели)
+         volume -= amount;
+-        log.event(user.name() + " расходует " + amount + " мл рома; осталось " + volume + " мл.");
++
++        // 5. Журнал (строго после успешного изменения состояния)
++        log.event(formatterConsume(user, amount, volume));
++    }
++
++    // Закрытый вспомогательный метод – изолирует формат, упрощает тестирование
++    private String formatterConsume(Person user, int consumed, int remaining) {
++        return String.format("%s: потреблено %d мл, осталось %d мл",
++                             user.name(), consumed, remaining);
+     }
+ 
+     private void requireOwner(Person person) {
