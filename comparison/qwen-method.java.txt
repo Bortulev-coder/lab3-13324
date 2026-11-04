@@ -1,0 +1,28 @@
+public void consume(Person user, int amount) throws InsufficientRumException {
+    // 1. Владелец (включая null)
+    if (user == null || !owner.equals(user)) {
+        throw new IllegalArgumentException("Пользователь не является владельцем бутылки");
+    }
+
+    // 2. Положительность amount
+    if (amount <= 0) {
+        throw new IllegalArgumentException("Объём потребления должен быть положительным");
+    }
+
+    // 3. Достаточность рома
+    if (amount > volume) {
+        throw new InsufficientRumException(amount, volume);
+    }
+
+    // 4. Списание (атомарно для однопоточной модели)
+    volume -= amount;
+
+    // 5. Журнал (строго после успешного изменения состояния)
+    log.event(formatterConsume(user, amount, volume));
+}
+
+// Закрытый вспомогательный метод – изолирует формат, упрощает тестирование
+private String formatterConsume(Person user, int consumed, int remaining) {
+    return String.format("%s: потреблено %d мл, осталось %d мл",
+                         user.name(), consumed, remaining);
+}

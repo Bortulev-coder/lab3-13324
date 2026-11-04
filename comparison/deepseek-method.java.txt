@@ -1,0 +1,26 @@
+public void consume(Person user, int amount)
+        throws InsufficientRumException {
+
+    // 1. Проверка владельца. Явный null-guard гарантирует отказ для user == null.
+    if (user == null || !owner.equals(user)) {
+        throw new IllegalArgumentException("Пользователь не является владельцем бутылки");
+    }
+
+    // 2. Проверка количества.
+    if (amount <= 0) {
+        throw new IllegalArgumentException("Количество должно быть положительным");
+    }
+
+    // 3. Проверка достаточности рома.
+    if (amount > volume) {
+        throw new InsufficientRumException(amount, volume);
+    }
+
+    // 4. Успешное списание.
+    volume -= amount;
+
+    // 5. Журналирование только после успешного списания.
+    log.event(owner.name()
+            + " израсходовал " + amount
+            + " мл рома, осталось " + volume + " мл");
+}

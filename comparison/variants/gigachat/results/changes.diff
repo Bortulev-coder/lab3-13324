@@ -1,0 +1,42 @@
+--- original/RumBottle.java
++++ gigachat/RumBottle.java
+@@ -24,12 +24,34 @@
+         log.event(from.name() + " передаёт бутылочку: " + to.name() + ".");
+     }
+ 
+-    public void consume(Person user, int amount) throws InsufficientRumException {
+-        requireOwner(user);
+-        if (amount <= 0) throw new IllegalArgumentException("Порция должна быть положительной");
+-        if (amount > volume) throw new InsufficientRumException(amount, volume);
++    public void consume(Person user, int amount)
++            throws InsufficientRumException {
++        // 1. Владелец (включая null)
++        if (user == null || !owner.equals(user)) {
++            throw new IllegalArgumentException("Пользователь не является владельцем бутылки");
++        }
++
++        // 2. Положительность amount
++        if (amount <= 0) {
++            throw new IllegalArgumentException("Объём потребления должен быть положительным");
++        }
++
++        // 3. Достаточность рома
++        if (amount > volume) {
++            throw new InsufficientRumException(amount, volume);
++        }
++
++        // 4. Списание
+         volume -= amount;
+-        log.event(user.name() + " расходует " + amount + " мл рома; осталось " + volume + " мл.");
++
++        // 5. Журнал (только при успехе)
++        log.event(formatterConsume(user, amount, volume));
++    }
++
++    // Закрытый вспомогательный метод – изолирует формат, упрощает тестирование
++    private String formatterConsume(Person user, int consumed, int remaining) {
++        return String.format("%s: потреблено %d мл, осталось %d мл",
++                             user.name(), consumed, remaining);
+     }
+ 
+     private void requireOwner(Person person) {
