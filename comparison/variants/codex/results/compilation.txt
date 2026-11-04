@@ -1,4 +1,0 @@
-javac --release 17 -encoding UTF-8 -Xlint:all -Werror
-Production compilation exit: 0
-Test compilation exit: 0
-JAR creation exit: 0

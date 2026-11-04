@@ -1,3 +1,0 @@
-PASS: 12 shared contract cases
-LOG_USES_USER_NAME=true
-ALIAS_LOG=Исполнитель расходует 10 мл рома; осталось 90 мл.
