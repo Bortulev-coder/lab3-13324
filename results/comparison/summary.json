@@ -1,6 +1,6 @@
 [
   {
-    "variant": "codex",
+    "variant": "main",
     "compilation": "PASS",
     "model_checks": 59,
     "contract_cases": 12,

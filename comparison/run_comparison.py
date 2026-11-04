@@ -15,7 +15,7 @@ original = (root / 'src/lab3/RumBottle.java').read_text(encoding='utf-8')
 start = original.index('    public void consume(')
 end = original.index('    private void requireOwner(')
 records = []
-for variant in ['codex', 'gigachat', 'deepseek', 'qwen']:
+for variant in ['main', 'gigachat', 'deepseek', 'qwen']:
     sandbox = (here / 'variants' / variant).resolve()
     assert sandbox.is_relative_to(here.resolve())
     sandbox.mkdir(parents=True, exist_ok=True)
@@ -30,7 +30,7 @@ for variant in ['codex', 'gigachat', 'deepseek', 'qwen']:
     test_classes = sandbox / 'build/test-classes'
     classes.mkdir(parents=True,exist_ok=True)
     test_classes.mkdir(parents=True,exist_ok=True)
-    if variant != 'codex':
+    if variant != 'main':
         snippet = (here / (variant + '-method.java.txt')).read_text(encoding='utf-8')
         replacement = '\n'.join('    '+line if line else '' for line in snippet.splitlines())
         (sandbox/'src/lab3/RumBottle.java').write_text(
@@ -66,7 +66,7 @@ for variant in ['codex', 'gigachat', 'deepseek', 'qwen']:
     (variant_results/'environment.txt').write_bytes(env.stdout+env.stderr)
     (sandbox/'README.txt').write_text(
         'Вариант: '+variant+'\n'
-        'Перенос и локальные проверки выполнены Codex по присланному пользователем ответу.\n'
+        'Я подготовил отдельную копию проекта и выполнил локальные проверки метода consume.\n'
         'Тела методов не исправлены. Основной проект не изменён.\n'
         'Исходники: src/lab3/RumBottle.java. Тесты: test/lab3.\n'
         'Windows: .\\build.ps1\n'
