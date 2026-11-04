@@ -1,0 +1,4 @@
+repeat_comparison_exit=0
+invalid_arguments_exit=2
+Picked up _JAVA_OPTIONS: -XX:MaxHeapSize=1G -XX:MaxMetaspaceSize=128m
+PASS: 59 checks

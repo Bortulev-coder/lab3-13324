@@ -1,0 +1,13 @@
+VARIANT_DIR\GigaChatCheckedProbe.java:3: error: unreported exception InsufficientRumException; must be caught or declared to be thrown
+    void exact(RumBottle bottle, Person owner) { bottle.consume(owner, 500); }
+                                                               ^
+VARIANT_DIR\GigaChatCheckedProbe.java:4: error: unreported exception InsufficientRumException; must be caught or declared to be thrown
+    void less(RumBottle bottle, Person owner) { bottle.consume(owner, 200); }
+                                                              ^
+VARIANT_DIR\GigaChatCheckedProbe.java:6: error: unreported exception InsufficientRumException; must be caught or declared to be thrown
+        bottle.consume(owner, 200);
+                      ^
+VARIANT_DIR\GigaChatCheckedProbe.java:7: error: unreported exception InsufficientRumException; must be caught or declared to be thrown
+        bottle.consume(owner, 150);
+                      ^
+4 errors

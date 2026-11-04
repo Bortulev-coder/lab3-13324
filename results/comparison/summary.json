@@ -1,0 +1,34 @@
+[
+  {
+    "variant": "codex",
+    "compilation": "PASS",
+    "model_checks": 59,
+    "contract_cases": 12,
+    "alias_logs_user": true,
+    "rum_bottle_sha256": "9bccdd3bd987c495f60b93833fb3407d1e2ffd567403852486d37e00dc0e0adc"
+  },
+  {
+    "variant": "gigachat",
+    "compilation": "PASS",
+    "model_checks": 59,
+    "contract_cases": 12,
+    "alias_logs_user": true,
+    "rum_bottle_sha256": "141aba9a4b39113fe9221845530466ef8e8b88fa33d9439ca4945125142abb2c"
+  },
+  {
+    "variant": "deepseek",
+    "compilation": "PASS",
+    "model_checks": 59,
+    "contract_cases": 12,
+    "alias_logs_user": false,
+    "rum_bottle_sha256": "c847254c2bf30db5c068a425dde222e62509eec347564dc12cceef52fd5788b8"
+  },
+  {
+    "variant": "qwen",
+    "compilation": "PASS",
+    "model_checks": 59,
+    "contract_cases": 12,
+    "alias_logs_user": true,
+    "rum_bottle_sha256": "c71dc07d6910ed1a5d08e7acc258887be729b889516f4bb9e9348b7ee72a0e32"
+  }
+]

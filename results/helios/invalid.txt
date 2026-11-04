@@ -1,0 +1,5 @@
+Picked up _JAVA_OPTIONS: -XX:MaxHeapSize=1G -XX:MaxMetaspaceSize=128m
+Ошибка параметров: Ром: 0..1000 мл
+Запуск: java -jar lab3.jar [--seed=N] [--rum=0..1000]
+  [--father-energy=0..100] [--friday-energy=0..100] [--capacity=1..10] [--dark]
+Без параметров: seed=13324, ром=80, силы отца=15, силы Пятницы=70, мест=3, день.

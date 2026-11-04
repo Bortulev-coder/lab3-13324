@@ -1,0 +1,5 @@
+PASS: 59 checks
+
+PASS: 12 shared contract cases
+LOG_USES_USER_NAME=false
+ALIAS_LOG=Владелец израсходовал 10 мл рома, осталось 90 мл

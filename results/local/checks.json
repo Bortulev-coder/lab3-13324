@@ -1,0 +1,60 @@
+{
+  "default": {
+    "arguments": [],
+    "exit_code": 0
+  },
+  "repeat": {
+    "arguments": [],
+    "exit_code": 0
+  },
+  "low-rum": {
+    "arguments": [
+      "--rum=5"
+    ],
+    "exit_code": 0
+  },
+  "full-boat": {
+    "arguments": [
+      "--capacity=1"
+    ],
+    "exit_code": 0
+  },
+  "dark": {
+    "arguments": [
+      "--dark",
+      "--rum=0",
+      "--father-energy=0"
+    ],
+    "exit_code": 0
+  },
+  "tired": {
+    "arguments": [
+      "--friday-energy=0"
+    ],
+    "exit_code": 0
+  },
+  "different-seed": {
+    "arguments": [
+      "--seed=42"
+    ],
+    "exit_code": 0
+  },
+  "invalid": {
+    "arguments": [
+      "--rum=-1"
+    ],
+    "exit_code": 2
+  },
+  "invalid-number": {
+    "arguments": [
+      "--seed=bad"
+    ],
+    "exit_code": 2
+  },
+  "help": {
+    "arguments": [
+      "--help"
+    ],
+    "exit_code": 0
+  }
+}

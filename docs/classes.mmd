@@ -1,0 +1,146 @@
+classDiagram
+    class WorldObject {
+        <<abstract>>
+        -String id
+        -String name
+        #StoryLog log
+        #describeState() String
+        +equals(Object) boolean
+        +hashCode() int
+        +toString() String
+    }
+    class Person {
+        <<abstract>>
+        -Condition condition
+        -Emotion emotion
+        +reactToReunion() void
+        +condition() Condition
+        #recover(int, int) void
+        #spendEnergy(int) boolean
+    }
+    class Robinson {
+        +orderRelease(Friday, Father) void
+        +adviseMassage() void
+        +reactToReunion() void
+    }
+    class Friday {
+        -Father father
+        -Jacket jacket
+        -boolean recognized
+        -int joyfulActions
+        +recognize(Father, boolean) boolean
+        +giveSip(Father, RumBottle) void
+        +celebrate(Random) void
+        +jumpAround(Boat, Random) void
+        +embrace() void
+        +massage(Father, RumBottle, Random) void
+        +massageWithoutRum(Father) void
+        +reactToReunion() void
+    }
+    class Father {
+        -boolean free
+        -boolean seated
+        +release() void
+        +acceptSip() void
+        +sitUp() void
+        +receiveCare(int) void
+        +reactToReunion() void
+    }
+    class Boat {
+        -int capacity
+        -ArrayList~Person~ passengers
+        +board(Person) void
+        +leave(Person) void
+        +passengers() List~Person~
+    }
+    class RumBottle {
+        -int volume
+        -Person owner
+        +transfer(Person, Person) void
+        +consume(Person, int) void
+    }
+    class Jacket {
+        -boolean open
+        +open() void
+    }
+    class Condition {
+        <<record>>
+        +int energy
+        +int stiffness
+        +recover(int, int) Condition
+        +spend(int) Condition
+    }
+    class ScenarioConfig {
+        <<record>>
+        +long seed
+        +int rum
+        +int fatherEnergy
+        +int fridayEnergy
+        +int capacity
+        +boolean daylight
+        +parse(String[]) ScenarioConfig
+    }
+    class Emotion {
+        <<enumeration>>
+        WORRIED
+        HOPEFUL
+        JOYFUL
+        MOVED
+        CALM
+    }
+    class JoyAction {
+        <<enumeration>>
+        CRY
+        LAUGH
+        DANCE
+        WAVE
+        +cost() int
+    }
+    class StoryLog {
+        <<interface>>
+        +event(String) void
+    }
+    class InsufficientRumException {
+        -int requested
+        -int available
+        +getMessage() String
+    }
+    class Scenario {
+        -StoryLog log
+        +run(ScenarioConfig) void
+    }
+    class Main {
+        +main(String[]) void
+    }
+    WorldObject <|-- Person
+    Person <|-- Robinson
+    Person <|-- Friday
+    Person <|-- Father
+    WorldObject <|-- Boat
+    WorldObject <|-- RumBottle
+    WorldObject <|-- Jacket
+    WorldObject --> "1" StoryLog : log
+    Person --> "1" Condition : snapshot
+    Person --> "1" Emotion
+    Friday --> "1" Father : father
+    Friday --> "1" Jacket : jacket
+    Friday ..> JoyAction : chooses
+    Friday ..> Boat : jumps
+    Friday ..> RumBottle : uses
+    Friday ..> InsufficientRumException : throws
+    Boat --> "0..*" Person : passengers capacity bound
+    RumBottle --> "1" Person : owner
+    RumBottle ..> InsufficientRumException : throws
+    Exception <|-- InsufficientRumException
+    Main ..> ScenarioConfig : parses
+    Main ..> Scenario : runs
+    Main ..> StoryLog : supplies lambda
+    Scenario --> "1" StoryLog
+    Scenario ..> ScenarioConfig
+    Scenario ..> Robinson : creates
+    Scenario ..> Friday : creates
+    Scenario ..> Father : creates
+    Scenario ..> Boat : creates
+    Scenario ..> RumBottle : creates
+    Scenario ..> Jacket : creates
+    Scenario ..> InsufficientRumException : catches

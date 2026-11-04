@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1450" height="820" viewBox="0 0 1450 820">
+<rect width="1450" height="820" fill="white"/>
+<polyline points="375,140 530,140" fill="none" stroke="#334155" stroke-width="1.6" stroke-dasharray="8 5"/>
+<polygon points="530,140 519.0,135.0 519.0,145.0" fill="#334155" stroke="#334155" stroke-width="1.6"/>
+<polyline points="200,157 200,500" fill="none" stroke="#334155" stroke-width="1.6" stroke-dasharray="8 5"/>
+<polygon points="200,500 205.0,489.0 195.0,489.0" fill="#334155" stroke="#334155" stroke-width="1.6"/>
+<polyline points="890,145 1050,145" fill="none" stroke="#334155" stroke-width="1.6"/>
+<polygon points="1050,145 1039.0,140.0 1039.0,150.0" fill="#334155" stroke="#334155" stroke-width="1.6"/>
+<polyline points="640,204 640,390 390,390 390,545 375,545" fill="none" stroke="#334155" stroke-width="1.6" stroke-dasharray="8 5"/>
+<polygon points="375,545 386.0,550.0 386.0,540.0" fill="#334155" stroke="#334155" stroke-width="1.6"/>
+<polyline points="710,204 710,490" fill="none" stroke="#334155" stroke-width="1.6" stroke-dasharray="8 5"/>
+<polygon points="710,490 715.0,479.0 705.0,479.0" fill="#334155" stroke="#334155" stroke-width="1.6"/>
+<polyline points="1195,510 1195,182" fill="none" stroke="#334155" stroke-width="1.6"/>
+<polygon points="1195,182 1190.0,193.0 1200.0,193.0" fill="#334155" stroke="#334155" stroke-width="1.6"/>
+<rect x="30" y="60" width="345" height="97" fill="white" stroke="#334155" stroke-width="1.6"/>
+<rect x="31" y="61" width="343" height="46" fill="#e8eff6"/>
+<text x="45" y="94" font-family="Arial, sans-serif" font-size="26" fill="#101820" font-weight="bold">Main</text>
+<polyline points="30,107 375,107" fill="none" stroke="#334155" stroke-width="1.6"/>
+<text x="44" y="135" font-family="Arial, sans-serif" font-size="22" fill="#101820">+ main(String[])</text>
+<rect x="530" y="60" width="360" height="144" fill="white" stroke="#334155" stroke-width="1.6"/>
+<rect x="531" y="61" width="358" height="46" fill="#e8eff6"/>
+<text x="545" y="94" font-family="Arial, sans-serif" font-size="26" fill="#101820" font-weight="bold">Scenario</text>
+<polyline points="530,107 890,107" fill="none" stroke="#334155" stroke-width="1.6"/>
+<text x="544" y="135" font-family="Arial, sans-serif" font-size="22" fill="#101820">- log: StoryLog</text>
+<polyline points="530,148 890,148" fill="none" stroke="#334155" stroke-width="1.6"/>
+<text x="544" y="182" font-family="Arial, sans-serif" font-size="22" fill="#101820">+ run(ScenarioConfig)</text>
+<rect x="1050" y="60" width="350" height="122" fill="white" stroke="#334155" stroke-width="1.6"/>
+<rect x="1051" y="61" width="348" height="71" fill="#e8eff6"/>
+<text x="1065" y="85" font-family="Arial, sans-serif" font-size="20" fill="#101820">«interface»</text>
+<text x="1065" y="118" font-family="Arial, sans-serif" font-size="26" fill="#101820" font-weight="bold">StoryLog</text>
+<polyline points="1050,132 1400,132" fill="none" stroke="#334155" stroke-width="1.6"/>
+<text x="1064" y="160" font-family="Arial, sans-serif" font-size="22" fill="#101820">+ event(String): void</text>
+<rect x="30" y="500" width="345" height="271" fill="white" stroke="#334155" stroke-width="1.6"/>
+<rect x="31" y="501" width="343" height="71" fill="#e8eff6"/>
+<text x="45" y="525" font-family="Arial, sans-serif" font-size="20" fill="#101820">«record»</text>
+<text x="45" y="558" font-family="Arial, sans-serif" font-size="26" fill="#101820" font-weight="bold">ScenarioConfig</text>
+<polyline points="30,572 375,572" fill="none" stroke="#334155" stroke-width="1.6"/>
+<text x="44" y="600" font-family="Arial, sans-serif" font-size="22" fill="#101820">seed: long</text>
+<text x="44" y="634" font-family="Arial, sans-serif" font-size="22" fill="#101820">rum, fatherEnergy: int</text>
+<text x="44" y="668" font-family="Arial, sans-serif" font-size="22" fill="#101820">fridayEnergy, capacity: int</text>
+<text x="44" y="702" font-family="Arial, sans-serif" font-size="22" fill="#101820">daylight: boolean</text>
+<polyline points="30,715 375,715" fill="none" stroke="#334155" stroke-width="1.6"/>
+<text x="44" y="749" font-family="Arial, sans-serif" font-size="22" fill="#101820">+ parse(String[])</text>
+<rect x="510" y="490" width="410" height="169" fill="white" stroke="#334155" stroke-width="1.6"/>
+<rect x="511" y="491" width="408" height="71" fill="#e8eff6"/>
+<text x="525" y="515" font-family="Arial, sans-serif" font-size="20" fill="#101820">«creates»</text>
+<text x="525" y="548" font-family="Arial, sans-serif" font-size="26" fill="#101820" font-weight="bold">Объекты сцены</text>
+<polyline points="510,562 920,562" fill="none" stroke="#334155" stroke-width="1.6"/>
+<text x="524" y="590" font-family="Arial, sans-serif" font-size="22" fill="#101820">Robinson, Friday, Father</text>
+<text x="524" y="624" font-family="Arial, sans-serif" font-size="22" fill="#101820">Boat, RumBottle, Jacket</text>
+<rect x="1040" y="510" width="360" height="135" fill="white" stroke="#334155" stroke-width="1.6"/>
+<rect x="1041" y="511" width="358" height="71" fill="#e8eff6"/>
+<text x="1055" y="535" font-family="Arial, sans-serif" font-size="20" fill="#101820">«abstract»</text>
+<text x="1055" y="568" font-family="Arial, sans-serif" font-size="26" fill="#101820" font-weight="bold">WorldObject</text>
+<polyline points="1040,582 1400,582" fill="none" stroke="#334155" stroke-width="1.6"/>
+<text x="1054" y="610" font-family="Arial, sans-serif" font-size="22" fill="#101820"># log: StoryLog</text>
+<text x="393" y="125" font-family="Arial, sans-serif" font-size="20" fill="#101820">runs</text>
+<text x="920" y="130" font-family="Arial, sans-serif" font-size="20" fill="#101820">log 1</text>
+<text x="220" y="355" font-family="Arial, sans-serif" font-size="20" fill="#101820">parses</text>
+<text x="510" y="385" font-family="Arial, sans-serif" font-size="20" fill="#101820">uses</text>
+<text x="730" y="410" font-family="Arial, sans-serif" font-size="20" fill="#101820">creates</text>
+<text x="1210" y="385" font-family="Arial, sans-serif" font-size="20" fill="#101820">log 1</text>
+<text x="34" y="807" font-family="Arial, sans-serif" font-size="22" fill="#101820">Main передаёт StoryLog как ссылку на метод; Scenario обрабатывает нехватку рома.</text>
+</svg>
