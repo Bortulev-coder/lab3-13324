@@ -21,7 +21,7 @@ public final class RumBottle extends WorldObject {
     public void transfer(Person from, Person to) {
         requireOwner(from);
         owner = Objects.requireNonNull(to);
-        log.event(from.name() + " передаёт бутылочку: " + to.name() + ".");
+        recordEvent(from.name() + " передаёт бутылочку: " + to.name() + ".");
     }
 
     public void consume(Person user, int amount) throws InsufficientRumException {
