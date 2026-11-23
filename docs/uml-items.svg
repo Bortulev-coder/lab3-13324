@@ -63,10 +63,9 @@
 <text x="534" y="695" font-family="Arial, sans-serif" font-size="22" fill="#101820">extends Exception</text>
 <polyline points="520,708 940,708" fill="none" stroke="#334155" stroke-width="1.6"/>
 <text x="534" y="742" font-family="Arial, sans-serif" font-size="22" fill="#101820">+ getMessage(): String</text>
-<text x="35" y="540" font-family="Arial, sans-serif" font-size="20" fill="#101820">passengers</text>
-<text x="35" y="570" font-family="Arial, sans-serif" font-size="20" fill="#101820">0..capacity</text>
+<text x="35" y="540" font-family="Arial, sans-serif" font-size="20" fill="#101820">passengers 0..capacity</text>
 <text x="468" y="565" font-family="Arial, sans-serif" font-size="20" fill="#101820">owner 1</text>
 <text x="740" y="570" font-family="Arial, sans-serif" font-size="20" fill="#101820">throws</text>
 <text x="1230" y="525" font-family="Arial, sans-serif" font-size="20" fill="#101820">jacket 1</text>
-<text x="34" y="807" font-family="Arial, sans-serif" font-size="22" fill="#101820">Person и Friday показаны повторно как ссылки на классы предыдущего вида.</text>
+<text x="34" y="806" font-family="Arial, sans-serif" font-size="21" fill="#101820">Boat.board / leave согласуют пассажиров и положение Person. Повторная посадка не создаёт дубликат.</text>
 </svg>

@@ -1,64 +1,66 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1450" height="820" viewBox="0 0 1450 820">
 <rect width="1450" height="820" fill="white"/>
-<polyline points="375,140 530,140" fill="none" stroke="#334155" stroke-width="1.6" stroke-dasharray="8 5"/>
-<polygon points="530,140 519.0,135.0 519.0,145.0" fill="#334155" stroke="#334155" stroke-width="1.6"/>
-<polyline points="200,157 200,500" fill="none" stroke="#334155" stroke-width="1.6" stroke-dasharray="8 5"/>
-<polygon points="200,500 205.0,489.0 195.0,489.0" fill="#334155" stroke="#334155" stroke-width="1.6"/>
-<polyline points="890,145 1050,145" fill="none" stroke="#334155" stroke-width="1.6"/>
-<polygon points="1050,145 1039.0,140.0 1039.0,150.0" fill="#334155" stroke="#334155" stroke-width="1.6"/>
-<polyline points="640,204 640,390 390,390 390,545 375,545" fill="none" stroke="#334155" stroke-width="1.6" stroke-dasharray="8 5"/>
-<polygon points="375,545 386.0,550.0 386.0,540.0" fill="#334155" stroke="#334155" stroke-width="1.6"/>
-<polyline points="710,204 710,490" fill="none" stroke="#334155" stroke-width="1.6" stroke-dasharray="8 5"/>
-<polygon points="710,490 715.0,479.0 705.0,479.0" fill="#334155" stroke="#334155" stroke-width="1.6"/>
-<polyline points="1195,510 1195,182" fill="none" stroke="#334155" stroke-width="1.6"/>
-<polygon points="1195,182 1190.0,193.0 1200.0,193.0" fill="#334155" stroke="#334155" stroke-width="1.6"/>
-<rect x="30" y="60" width="345" height="97" fill="white" stroke="#334155" stroke-width="1.6"/>
-<rect x="31" y="61" width="343" height="46" fill="#e8eff6"/>
-<text x="45" y="94" font-family="Arial, sans-serif" font-size="26" fill="#101820" font-weight="bold">Main</text>
-<polyline points="30,107 375,107" fill="none" stroke="#334155" stroke-width="1.6"/>
-<text x="44" y="135" font-family="Arial, sans-serif" font-size="22" fill="#101820">+ main(String[])</text>
-<rect x="530" y="60" width="360" height="144" fill="white" stroke="#334155" stroke-width="1.6"/>
-<rect x="531" y="61" width="358" height="46" fill="#e8eff6"/>
-<text x="545" y="94" font-family="Arial, sans-serif" font-size="26" fill="#101820" font-weight="bold">Scenario</text>
-<polyline points="530,107 890,107" fill="none" stroke="#334155" stroke-width="1.6"/>
-<text x="544" y="135" font-family="Arial, sans-serif" font-size="22" fill="#101820">- log: StoryLog</text>
-<polyline points="530,148 890,148" fill="none" stroke="#334155" stroke-width="1.6"/>
-<text x="544" y="182" font-family="Arial, sans-serif" font-size="22" fill="#101820">+ run(ScenarioConfig)</text>
-<rect x="1050" y="60" width="350" height="122" fill="white" stroke="#334155" stroke-width="1.6"/>
-<rect x="1051" y="61" width="348" height="71" fill="#e8eff6"/>
-<text x="1065" y="85" font-family="Arial, sans-serif" font-size="20" fill="#101820">«interface»</text>
-<text x="1065" y="118" font-family="Arial, sans-serif" font-size="26" fill="#101820" font-weight="bold">StoryLog</text>
-<polyline points="1050,132 1400,132" fill="none" stroke="#334155" stroke-width="1.6"/>
-<text x="1064" y="160" font-family="Arial, sans-serif" font-size="22" fill="#101820">+ event(String): void</text>
-<rect x="30" y="500" width="345" height="271" fill="white" stroke="#334155" stroke-width="1.6"/>
-<rect x="31" y="501" width="343" height="71" fill="#e8eff6"/>
-<text x="45" y="525" font-family="Arial, sans-serif" font-size="20" fill="#101820">«record»</text>
-<text x="45" y="558" font-family="Arial, sans-serif" font-size="26" fill="#101820" font-weight="bold">ScenarioConfig</text>
-<polyline points="30,572 375,572" fill="none" stroke="#334155" stroke-width="1.6"/>
-<text x="44" y="600" font-family="Arial, sans-serif" font-size="22" fill="#101820">seed: long</text>
-<text x="44" y="634" font-family="Arial, sans-serif" font-size="22" fill="#101820">rum, fatherEnergy: int</text>
-<text x="44" y="668" font-family="Arial, sans-serif" font-size="22" fill="#101820">fridayEnergy, capacity: int</text>
-<text x="44" y="702" font-family="Arial, sans-serif" font-size="22" fill="#101820">daylight: boolean</text>
-<polyline points="30,715 375,715" fill="none" stroke="#334155" stroke-width="1.6"/>
-<text x="44" y="749" font-family="Arial, sans-serif" font-size="22" fill="#101820">+ parse(String[])</text>
-<rect x="510" y="490" width="410" height="169" fill="white" stroke="#334155" stroke-width="1.6"/>
-<rect x="511" y="491" width="408" height="71" fill="#e8eff6"/>
-<text x="525" y="515" font-family="Arial, sans-serif" font-size="20" fill="#101820">«creates»</text>
-<text x="525" y="548" font-family="Arial, sans-serif" font-size="26" fill="#101820" font-weight="bold">Объекты сцены</text>
-<polyline points="510,562 920,562" fill="none" stroke="#334155" stroke-width="1.6"/>
-<text x="524" y="590" font-family="Arial, sans-serif" font-size="22" fill="#101820">Robinson, Friday, Father</text>
-<text x="524" y="624" font-family="Arial, sans-serif" font-size="22" fill="#101820">Boat, RumBottle, Jacket</text>
-<rect x="1040" y="510" width="360" height="135" fill="white" stroke="#334155" stroke-width="1.6"/>
-<rect x="1041" y="511" width="358" height="71" fill="#e8eff6"/>
-<text x="1055" y="535" font-family="Arial, sans-serif" font-size="20" fill="#101820">«abstract»</text>
-<text x="1055" y="568" font-family="Arial, sans-serif" font-size="26" fill="#101820" font-weight="bold">WorldObject</text>
-<polyline points="1040,582 1400,582" fill="none" stroke="#334155" stroke-width="1.6"/>
-<text x="1054" y="610" font-family="Arial, sans-serif" font-size="22" fill="#101820"># log: StoryLog</text>
-<text x="393" y="125" font-family="Arial, sans-serif" font-size="20" fill="#101820">runs</text>
-<text x="920" y="130" font-family="Arial, sans-serif" font-size="20" fill="#101820">log 1</text>
-<text x="220" y="355" font-family="Arial, sans-serif" font-size="20" fill="#101820">parses</text>
-<text x="510" y="385" font-family="Arial, sans-serif" font-size="20" fill="#101820">uses</text>
-<text x="730" y="410" font-family="Arial, sans-serif" font-size="20" fill="#101820">creates</text>
-<text x="1210" y="385" font-family="Arial, sans-serif" font-size="20" fill="#101820">log 1</text>
-<text x="34" y="807" font-family="Arial, sans-serif" font-size="22" fill="#101820">Main передаёт StoryLog как ссылку на метод; Scenario обрабатывает нехватку рома.</text>
+<polyline points="330,130 520,130" fill="none" stroke="#334155" stroke-width="1.6" stroke-dasharray="8 5"/>
+<polygon points="520,130 509.0,125.0 509.0,135.0" fill="#334155" stroke="#334155" stroke-width="1.6"/>
+<polyline points="190,174 190,490" fill="none" stroke="#334155" stroke-width="1.6" stroke-dasharray="8 5"/>
+<polygon points="190,490 195.0,479.0 185.0,479.0" fill="#334155" stroke="#334155" stroke-width="1.6"/>
+<polyline points="930,130 1060,130" fill="none" stroke="#334155" stroke-width="1.6"/>
+<polygon points="1060,130 1049.0,125.0 1049.0,135.0" fill="#334155" stroke="#334155" stroke-width="1.6"/>
+<polyline points="720,223 720,520" fill="none" stroke="#334155" stroke-width="1.6"/>
+<polygon points="720,520 725.0,509.0 715.0,509.0" fill="#334155" stroke="#334155" stroke-width="1.6"/>
+<polyline points="1195,520 1195,192" fill="none" stroke="#334155" stroke-width="1.6"/>
+<polygon points="1195,192 1190.0,203.0 1200.0,203.0" fill="#334155" stroke="#334155" stroke-width="1.6"/>
+<polyline points="520,610 410,610" fill="none" stroke="#334155" stroke-width="1.6" stroke-dasharray="8 5"/>
+<polygon points="410,610 421.0,615.0 421.0,605.0" fill="#334155" stroke="#334155" stroke-width="1.6"/>
+<rect x="40" y="70" width="290" height="97" fill="white" stroke="#334155" stroke-width="1.6"/>
+<rect x="41" y="71" width="288" height="46" fill="#e8eff6"/>
+<text x="55" y="104" font-family="Arial, sans-serif" font-size="26" fill="#101820" font-weight="bold">Main</text>
+<polyline points="40,117 330,117" fill="none" stroke="#334155" stroke-width="1.6"/>
+<text x="54" y="145" font-family="Arial, sans-serif" font-size="22" fill="#101820">+ main(String[])</text>
+<rect x="520" y="70" width="410" height="144" fill="white" stroke="#334155" stroke-width="1.6"/>
+<rect x="521" y="71" width="408" height="46" fill="#e8eff6"/>
+<text x="535" y="104" font-family="Arial, sans-serif" font-size="26" fill="#101820" font-weight="bold">Scenario</text>
+<polyline points="520,117 930,117" fill="none" stroke="#334155" stroke-width="1.6"/>
+<text x="534" y="145" font-family="Arial, sans-serif" font-size="22" fill="#101820">- log / narrator</text>
+<polyline points="520,158 930,158" fill="none" stroke="#334155" stroke-width="1.6"/>
+<text x="534" y="192" font-family="Arial, sans-serif" font-size="22" fill="#101820">+ run(ScenarioConfig)</text>
+<rect x="1060" y="70" width="340" height="122" fill="white" stroke="#334155" stroke-width="1.6"/>
+<rect x="1061" y="71" width="338" height="71" fill="#e8eff6"/>
+<text x="1075" y="95" font-family="Arial, sans-serif" font-size="20" fill="#101820">«interface»</text>
+<text x="1075" y="128" font-family="Arial, sans-serif" font-size="26" fill="#101820" font-weight="bold">StoryLog</text>
+<polyline points="1060,142 1400,142" fill="none" stroke="#334155" stroke-width="1.6"/>
+<text x="1074" y="170" font-family="Arial, sans-serif" font-size="22" fill="#101820">+ event(String)</text>
+<rect x="40" y="490" width="370" height="203" fill="white" stroke="#334155" stroke-width="1.6"/>
+<rect x="41" y="491" width="368" height="71" fill="#e8eff6"/>
+<text x="55" y="515" font-family="Arial, sans-serif" font-size="20" fill="#101820">«record»</text>
+<text x="55" y="548" font-family="Arial, sans-serif" font-size="26" fill="#101820" font-weight="bold">ScenarioConfig</text>
+<polyline points="40,562 410,562" fill="none" stroke="#334155" stroke-width="1.6"/>
+<text x="54" y="590" font-family="Arial, sans-serif" font-size="22" fill="#101820">seed / rum / fatherEnergy</text>
+<text x="54" y="624" font-family="Arial, sans-serif" font-size="22" fill="#101820">fridayEnergy / capacity / daylight</text>
+<polyline points="40,637 410,637" fill="none" stroke="#334155" stroke-width="1.6"/>
+<text x="54" y="671" font-family="Arial, sans-serif" font-size="22" fill="#101820">+ parse(String[])</text>
+<rect x="520" y="520" width="410" height="178" fill="white" stroke="#334155" stroke-width="1.6"/>
+<rect x="521" y="521" width="408" height="46" fill="#e8eff6"/>
+<text x="535" y="554" font-family="Arial, sans-serif" font-size="26" fill="#101820" font-weight="bold">StoryNarrator</text>
+<polyline points="520,567 930,567" fill="none" stroke="#334155" stroke-width="1.6"/>
+<text x="534" y="595" font-family="Arial, sans-serif" font-size="22" fill="#101820">- output: StoryLog</text>
+<polyline points="520,608 930,608" fill="none" stroke="#334155" stroke-width="1.6"/>
+<text x="534" y="642" font-family="Arial, sans-serif" font-size="22" fill="#101820">+ begin / describe</text>
+<text x="534" y="676" font-family="Arial, sans-serif" font-size="22" fill="#101820">+ publish(StoryLog, StoryEvent)</text>
+<rect x="1060" y="520" width="340" height="169" fill="white" stroke="#334155" stroke-width="1.6"/>
+<rect x="1061" y="521" width="338" height="71" fill="#e8eff6"/>
+<text x="1075" y="545" font-family="Arial, sans-serif" font-size="20" fill="#101820">«abstract»</text>
+<text x="1075" y="578" font-family="Arial, sans-serif" font-size="26" fill="#101820" font-weight="bold">WorldObject</text>
+<polyline points="1060,592 1400,592" fill="none" stroke="#334155" stroke-width="1.6"/>
+<text x="1074" y="620" font-family="Arial, sans-serif" font-size="22" fill="#101820">- history: ArrayList&lt;StoryEvent&gt;</text>
+<polyline points="1060,633 1400,633" fill="none" stroke="#334155" stroke-width="1.6"/>
+<text x="1074" y="667" font-family="Arial, sans-serif" font-size="22" fill="#101820"># recordEvent(String)</text>
+<polyline points="1060,640 930,640" fill="none" stroke="#334155" stroke-width="1.6" stroke-dasharray="8 5"/>
+<polygon points="930,640 941.0,645.0 941.0,635.0" fill="#334155" stroke="#334155" stroke-width="1.6"/>
+<text x="357" y="115" font-family="Arial, sans-serif" font-size="20" fill="#101820">runs</text>
+<text x="210" y="370" font-family="Arial, sans-serif" font-size="20" fill="#101820">parses</text>
+<text x="958" y="115" font-family="Arial, sans-serif" font-size="20" fill="#101820">log</text>
+<text x="740" y="390" font-family="Arial, sans-serif" font-size="20" fill="#101820">narrator</text>
+<text x="1210" y="385" font-family="Arial, sans-serif" font-size="20" fill="#101820">log</text>
+<text x="34" y="806" font-family="Arial, sans-serif" font-size="21" fill="#101820">Scenario создаёт шесть сущностей и вызывает действия. StoryNarrator публикует результаты через StoryLog.</text>
 </svg>

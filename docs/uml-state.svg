@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1450" height="820" viewBox="0 0 1450 820">
+<rect width="1450" height="820" fill="white"/>
+<polyline points="440,155 540,155" fill="none" stroke="#334155" stroke-width="1.6"/>
+<polygon points="540,155 529.0,150.0 529.0,160.0" fill="#334155" stroke="#334155" stroke-width="1.6"/>
+<polyline points="440,550 540,550" fill="none" stroke="#334155" stroke-width="1.6"/>
+<polygon points="540,550 529.0,545.0 529.0,555.0" fill="#334155" stroke="#334155" stroke-width="1.6"/>
+<rect x="40" y="50" width="400" height="212" fill="white" stroke="#334155" stroke-width="1.6"/>
+<rect x="41" y="51" width="398" height="46" fill="#e8eff6"/>
+<text x="55" y="84" font-family="Arial, sans-serif" font-size="26" fill="#101820" font-weight="bold">Person</text>
+<polyline points="40,97 440,97" fill="none" stroke="#334155" stroke-width="1.6"/>
+<text x="54" y="125" font-family="Arial, sans-serif" font-size="22" fill="#101820">- location: Location</text>
+<text x="54" y="159" font-family="Arial, sans-serif" font-size="22" fill="#101820">- boat: Boat</text>
+<polyline points="40,172 440,172" fill="none" stroke="#334155" stroke-width="1.6"/>
+<text x="54" y="206" font-family="Arial, sans-serif" font-size="22" fill="#101820">+ approach(Boat)</text>
+<text x="54" y="240" font-family="Arial, sans-serif" font-size="22" fill="#101820">+ canReach(Person)</text>
+<rect x="540" y="50" width="400" height="203" fill="white" stroke="#334155" stroke-width="1.6"/>
+<rect x="541" y="51" width="398" height="71" fill="#e8eff6"/>
+<text x="555" y="75" font-family="Arial, sans-serif" font-size="20" fill="#101820">«enum»</text>
+<text x="555" y="108" font-family="Arial, sans-serif" font-size="26" fill="#101820" font-weight="bold">Location</text>
+<polyline points="540,122 940,122" fill="none" stroke="#334155" stroke-width="1.6"/>
+<text x="554" y="150" font-family="Arial, sans-serif" font-size="22" fill="#101820">ON_SHORE</text>
+<text x="554" y="184" font-family="Arial, sans-serif" font-size="22" fill="#101820">BY_BOAT</text>
+<text x="554" y="218" font-family="Arial, sans-serif" font-size="22" fill="#101820">IN_BOAT</text>
+<rect x="1040" y="50" width="370" height="203" fill="white" stroke="#334155" stroke-width="1.6"/>
+<rect x="1041" y="51" width="368" height="71" fill="#e8eff6"/>
+<text x="1055" y="75" font-family="Arial, sans-serif" font-size="20" fill="#101820">«enum»</text>
+<text x="1055" y="108" font-family="Arial, sans-serif" font-size="26" fill="#101820" font-weight="bold">CareMethod</text>
+<polyline points="1040,122 1410,122" fill="none" stroke="#334155" stroke-width="1.6"/>
+<text x="1054" y="150" font-family="Arial, sans-serif" font-size="22" fill="#101820">NONE</text>
+<text x="1054" y="184" font-family="Arial, sans-serif" font-size="22" fill="#101820">RUM</text>
+<text x="1054" y="218" font-family="Arial, sans-serif" font-size="22" fill="#101820">DRY</text>
+<rect x="40" y="430" width="400" height="178" fill="white" stroke="#334155" stroke-width="1.6"/>
+<rect x="41" y="431" width="398" height="46" fill="#e8eff6"/>
+<text x="55" y="464" font-family="Arial, sans-serif" font-size="26" fill="#101820" font-weight="bold">Robinson / Friday</text>
+<polyline points="40,477 440,477" fill="none" stroke="#334155" stroke-width="1.6"/>
+<text x="54" y="505" font-family="Arial, sans-serif" font-size="22" fill="#101820">knownFamily / plannedCare</text>
+<polyline points="40,518 440,518" fill="none" stroke="#334155" stroke-width="1.6"/>
+<text x="54" y="552" font-family="Arial, sans-serif" font-size="22" fill="#101820">+ learnFamily / planCare</text>
+<text x="54" y="586" font-family="Arial, sans-serif" font-size="22" fill="#101820">+ explainRelationship / performCare</text>
+<rect x="540" y="430" width="400" height="169" fill="white" stroke="#334155" stroke-width="1.6"/>
+<rect x="541" y="431" width="398" height="71" fill="#e8eff6"/>
+<text x="555" y="455" font-family="Arial, sans-serif" font-size="20" fill="#101820">«record»</text>
+<text x="555" y="488" font-family="Arial, sans-serif" font-size="26" fill="#101820" font-weight="bold">FamilyRelation</text>
+<polyline points="540,502 940,502" fill="none" stroke="#334155" stroke-width="1.6"/>
+<text x="554" y="530" font-family="Arial, sans-serif" font-size="22" fill="#101820">Friday son</text>
+<text x="554" y="564" font-family="Arial, sans-serif" font-size="22" fill="#101820">Father father</text>
+<rect x="1040" y="430" width="370" height="169" fill="white" stroke="#334155" stroke-width="1.6"/>
+<rect x="1041" y="431" width="368" height="71" fill="#e8eff6"/>
+<text x="1055" y="455" font-family="Arial, sans-serif" font-size="20" fill="#101820">«record»</text>
+<text x="1055" y="488" font-family="Arial, sans-serif" font-size="26" fill="#101820" font-weight="bold">StoryEvent</text>
+<polyline points="1040,502 1410,502" fill="none" stroke="#334155" stroke-width="1.6"/>
+<text x="1054" y="530" font-family="Arial, sans-serif" font-size="22" fill="#101820">String message</text>
+<text x="1054" y="564" font-family="Arial, sans-serif" font-size="22" fill="#101820">String state</text>
+<text x="34" y="341" font-family="Arial, sans-serif" font-size="21" fill="#101820">Person.boat -&gt; Boat; пятница: plannedCare -&gt; CareMethod; robinson: knownFamily -&gt; FamilyRelation.</text>
+<text x="34" y="757" font-family="Arial, sans-serif" font-size="22" fill="#101820">WorldObject.history -&gt; StoryEvent; StoryNarrator использует StoryEvent.message для вывода.</text>
+<text x="34" y="802" font-family="Arial, sans-serif" font-size="22" fill="#101820">Emotion: WORRIED, HOPEFUL, JOYFUL, MOVED, CALM - настроение персонажа.</text>
+</svg>

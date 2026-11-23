@@ -4,6 +4,9 @@ classDiagram
         -String id
         -String name
         #StoryLog log
+        -ArrayList~StoryEvent~ history
+        #recordEvent(String) void
+        +history() List~StoryEvent~
         #describeState() String
         +equals(Object) boolean
         +hashCode() int
@@ -13,12 +16,23 @@ classDiagram
         <<abstract>>
         -Condition condition
         -Emotion emotion
+        -Location location
+        -Boat boat
+        +approach(Boat) void
+        +canReach(Person) boolean
+        +isNear(Boat) boolean
+        +isAboard(Boat) boolean
         +reactToReunion() void
         +condition() Condition
         #recover(int, int) void
         #spendEnergy(int) boolean
     }
     class Robinson {
+        -int releaseOrders
+        -boolean massageAdvised
+        -FamilyRelation knownFamily
+        +learnFamily(Friday, Father) void
+        +adviseMassage(Friday) void
         +orderRelease(Friday, Father) void
         +adviseMassage() void
         +reactToReunion() void
@@ -28,6 +42,24 @@ classDiagram
         -Jacket jacket
         -boolean recognized
         -int joyfulActions
+        -ArrayList~JoyAction~ expressions
+        -CareMethod plannedCare
+        -Father careRecipient
+        -boolean relationshipExplained
+        -int failedBoardings
+        +cry() boolean
+        +laugh() boolean
+        +dance() boolean
+        +waveHands() boolean
+        +hitHead() boolean
+        +hitFace() boolean
+        +jumpInto(Boat) boolean
+        +jumpOut(Boat) void
+        +explainRelationship(Robinson) void
+        +planCare(CareMethod) void
+        +performCare(Father, RumBottle, Random) void
+        +comfort(Father, InsufficientRumException) void
+        +offerHelp(Father) void
         +recognize(Father, boolean) boolean
         +giveSip(Father, RumBottle) void
         +celebrate(Random) void
@@ -40,6 +72,8 @@ classDiagram
     class Father {
         -boolean free
         -boolean seated
+        -int encouragements
+        +acceptEncouragement(Person) void
         +release() void
         +acceptSip() void
         +sitUp() void
@@ -94,6 +128,9 @@ classDiagram
         LAUGH
         DANCE
         WAVE
+        HIT_HEAD
+        HIT_FACE
+        +perform(Friday) boolean
         +cost() int
     }
     class StoryLog {
@@ -107,6 +144,7 @@ classDiagram
     }
     class Scenario {
         -StoryLog log
+        -StoryNarrator narrator
         +run(ScenarioConfig) void
     }
     class Main {
@@ -144,3 +182,45 @@ classDiagram
     Scenario ..> RumBottle : creates
     Scenario ..> Jacket : creates
     Scenario ..> InsufficientRumException : catches
+
+    class Location {
+        <<enumeration>>
+        ON_SHORE
+        BY_BOAT
+        IN_BOAT
+    }
+    class CareMethod {
+        <<enumeration>>
+        NONE
+        RUM
+        DRY
+    }
+    class FamilyRelation {
+        <<record>>
+        +Friday son
+        +Father father
+    }
+    class StoryEvent {
+        <<record>>
+        +String message
+        +String state
+    }
+    class StoryNarrator {
+        -StoryLog output
+        +begin(ScenarioConfig) void
+        +describe(List) void
+        +publish(StoryLog, StoryEvent) void
+    }
+    Person --> Location : location
+    Person --> "0..1" Boat : beside or aboard
+    Friday --> CareMethod : plannedCare
+    Friday --> "0..1" Father : careRecipient
+    Friday --> "0..*" JoyAction : expressions
+    Robinson --> "0..1" FamilyRelation : knownFamily
+    FamilyRelation --> Friday : son
+    FamilyRelation --> Father : father
+    WorldObject --> "0..*" StoryEvent : history
+    WorldObject ..> StoryNarrator : publishes
+    StoryNarrator --> StoryLog : output
+    StoryNarrator ..> StoryEvent : reads
+    Scenario --> StoryNarrator

@@ -1,91 +1,76 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1450" height="820" viewBox="0 0 1450 820">
 <rect width="1450" height="820" fill="white"/>
-<polyline points="550,220 550,189" fill="none" stroke="#334155" stroke-width="1.6"/>
-<polygon points="550,189 542.0,204.0 558.0,204.0" fill="white" stroke="#334155" stroke-width="1.6"/>
-<polyline points="170,535 170,460 550,460 550,423" fill="none" stroke="#334155" stroke-width="1.6"/>
-<polygon points="550,423 542.0,438.0 558.0,438.0" fill="white" stroke="#334155" stroke-width="1.6"/>
-<polyline points="630,490 630,460 550,460 550,423" fill="none" stroke="#334155" stroke-width="1.6"/>
-<polygon points="550,423 542.0,438.0 558.0,438.0" fill="white" stroke="#334155" stroke-width="1.6"/>
-<polyline points="1150,510 1150,460 550,460 550,423" fill="none" stroke="#334155" stroke-width="1.6"/>
-<polygon points="550,423 542.0,438.0 558.0,438.0" fill="white" stroke="#334155" stroke-width="1.6"/>
-<polyline points="750,270 900,270 900,85 1010,85" fill="none" stroke="#334155" stroke-width="1.6"/>
-<polygon points="1010,85 999.0,80.0 999.0,90.0" fill="#334155" stroke="#334155" stroke-width="1.6"/>
-<polyline points="750,330 1030,330" fill="none" stroke="#334155" stroke-width="1.6"/>
-<polygon points="1030,330 1019.0,325.0 1019.0,335.0" fill="#334155" stroke="#334155" stroke-width="1.6"/>
-<polyline points="830,600 970,600" fill="none" stroke="#334155" stroke-width="1.6"/>
-<polygon points="970,600 959.0,595.0 959.0,605.0" fill="#334155" stroke="#334155" stroke-width="1.6"/>
-<polyline points="430,550 330,550 330,330 270,330" fill="none" stroke="#334155" stroke-width="1.6" stroke-dasharray="8 5"/>
-<polygon points="270,330 281.0,335.0 281.0,325.0" fill="#334155" stroke="#334155" stroke-width="1.6"/>
-<rect x="350" y="20" width="400" height="169" fill="white" stroke="#334155" stroke-width="1.6"/>
-<rect x="351" y="21" width="398" height="71" fill="#e8eff6"/>
-<text x="365" y="45" font-family="Arial, sans-serif" font-size="20" fill="#101820">«abstract»</text>
-<text x="365" y="78" font-family="Arial, sans-serif" font-size="26" fill="#101820" font-weight="bold">WorldObject</text>
-<polyline points="350,92 750,92" fill="none" stroke="#334155" stroke-width="1.6"/>
-<text x="364" y="120" font-family="Arial, sans-serif" font-size="22" fill="#101820">- id, name: String</text>
-<polyline points="350,133 750,133" fill="none" stroke="#334155" stroke-width="1.6"/>
-<text x="364" y="167" font-family="Arial, sans-serif" font-size="22" fill="#101820"># describeState(): String</text>
-<rect x="350" y="220" width="400" height="203" fill="white" stroke="#334155" stroke-width="1.6"/>
-<rect x="351" y="221" width="398" height="71" fill="#e8eff6"/>
-<text x="365" y="245" font-family="Arial, sans-serif" font-size="20" fill="#101820">«abstract»</text>
-<text x="365" y="278" font-family="Arial, sans-serif" font-size="26" fill="#101820" font-weight="bold">Person</text>
-<polyline points="350,292 750,292" fill="none" stroke="#334155" stroke-width="1.6"/>
-<text x="364" y="320" font-family="Arial, sans-serif" font-size="22" fill="#101820">- condition: Condition</text>
-<text x="364" y="354" font-family="Arial, sans-serif" font-size="22" fill="#101820">- emotion: Emotion</text>
-<polyline points="350,367 750,367" fill="none" stroke="#334155" stroke-width="1.6"/>
-<text x="364" y="401" font-family="Arial, sans-serif" font-size="22" fill="#101820">+ reactToReunion(): void</text>
-<rect x="20" y="535" width="300" height="165" fill="white" stroke="#334155" stroke-width="1.6"/>
-<rect x="21" y="536" width="298" height="46" fill="#e8eff6"/>
-<text x="35" y="569" font-family="Arial, sans-serif" font-size="26" fill="#101820" font-weight="bold">Robinson</text>
-<polyline points="20,582 320,582" fill="none" stroke="#334155" stroke-width="1.6"/>
-<text x="34" y="610" font-family="Arial, sans-serif" font-size="22" fill="#101820">+ orderRelease(...)</text>
-<text x="34" y="644" font-family="Arial, sans-serif" font-size="22" fill="#101820">+ adviseMassage()</text>
-<text x="34" y="678" font-family="Arial, sans-serif" font-size="22" fill="#101820">+ reactToReunion()</text>
-<rect x="430" y="490" width="400" height="280" fill="white" stroke="#334155" stroke-width="1.6"/>
-<rect x="431" y="491" width="398" height="46" fill="#e8eff6"/>
-<text x="445" y="524" font-family="Arial, sans-serif" font-size="26" fill="#101820" font-weight="bold">Friday</text>
-<polyline points="430,537 830,537" fill="none" stroke="#334155" stroke-width="1.6"/>
-<text x="444" y="565" font-family="Arial, sans-serif" font-size="22" fill="#101820">- father: Father</text>
-<text x="444" y="599" font-family="Arial, sans-serif" font-size="22" fill="#101820">- recognized: boolean</text>
-<polyline points="430,612 830,612" fill="none" stroke="#334155" stroke-width="1.6"/>
-<text x="444" y="646" font-family="Arial, sans-serif" font-size="22" fill="#101820">+ recognize(...)</text>
-<text x="444" y="680" font-family="Arial, sans-serif" font-size="22" fill="#101820">+ celebrate(Random)</text>
-<text x="444" y="714" font-family="Arial, sans-serif" font-size="22" fill="#101820">+ jumpAround(...)</text>
-<text x="444" y="748" font-family="Arial, sans-serif" font-size="22" fill="#101820">+ massage(...)</text>
-<rect x="970" y="510" width="350" height="212" fill="white" stroke="#334155" stroke-width="1.6"/>
-<rect x="971" y="511" width="348" height="46" fill="#e8eff6"/>
-<text x="985" y="544" font-family="Arial, sans-serif" font-size="26" fill="#101820" font-weight="bold">Father</text>
-<polyline points="970,557 1320,557" fill="none" stroke="#334155" stroke-width="1.6"/>
-<text x="984" y="585" font-family="Arial, sans-serif" font-size="22" fill="#101820">- free, seated: boolean</text>
-<polyline points="970,598 1320,598" fill="none" stroke="#334155" stroke-width="1.6"/>
-<text x="984" y="632" font-family="Arial, sans-serif" font-size="22" fill="#101820">+ release()</text>
-<text x="984" y="666" font-family="Arial, sans-serif" font-size="22" fill="#101820">+ receiveCare(int)</text>
-<text x="984" y="700" font-family="Arial, sans-serif" font-size="22" fill="#101820">+ reactToReunion()</text>
-<rect x="1010" y="20" width="350" height="169" fill="white" stroke="#334155" stroke-width="1.6"/>
-<rect x="1011" y="21" width="348" height="71" fill="#e8eff6"/>
-<text x="1025" y="45" font-family="Arial, sans-serif" font-size="20" fill="#101820">«record»</text>
-<text x="1025" y="78" font-family="Arial, sans-serif" font-size="26" fill="#101820" font-weight="bold">Condition</text>
-<polyline points="1010,92 1360,92" fill="none" stroke="#334155" stroke-width="1.6"/>
-<text x="1024" y="120" font-family="Arial, sans-serif" font-size="22" fill="#101820">energy, stiffness: int</text>
-<polyline points="1010,133 1360,133" fill="none" stroke="#334155" stroke-width="1.6"/>
-<text x="1024" y="167" font-family="Arial, sans-serif" font-size="22" fill="#101820">+ recover(int, int)</text>
-<rect x="1030" y="230" width="300" height="169" fill="white" stroke="#334155" stroke-width="1.6"/>
-<rect x="1031" y="231" width="298" height="71" fill="#e8eff6"/>
-<text x="1045" y="255" font-family="Arial, sans-serif" font-size="20" fill="#101820">«enum»</text>
-<text x="1045" y="288" font-family="Arial, sans-serif" font-size="26" fill="#101820" font-weight="bold">Emotion</text>
-<polyline points="1030,302 1330,302" fill="none" stroke="#334155" stroke-width="1.6"/>
-<text x="1044" y="330" font-family="Arial, sans-serif" font-size="22" fill="#101820">WORRIED, HOPEFUL</text>
-<text x="1044" y="364" font-family="Arial, sans-serif" font-size="22" fill="#101820">JOYFUL, MOVED, CALM</text>
-<rect x="20" y="240" width="250" height="203" fill="white" stroke="#334155" stroke-width="1.6"/>
-<rect x="21" y="241" width="248" height="71" fill="#e8eff6"/>
-<text x="35" y="265" font-family="Arial, sans-serif" font-size="20" fill="#101820">«enum»</text>
-<text x="35" y="298" font-family="Arial, sans-serif" font-size="26" fill="#101820" font-weight="bold">JoyAction</text>
-<polyline points="20,312 270,312" fill="none" stroke="#334155" stroke-width="1.6"/>
-<text x="34" y="340" font-family="Arial, sans-serif" font-size="22" fill="#101820">CRY, LAUGH</text>
-<text x="34" y="374" font-family="Arial, sans-serif" font-size="22" fill="#101820">DANCE, WAVE</text>
-<polyline points="20,387 270,387" fill="none" stroke="#334155" stroke-width="1.6"/>
-<text x="34" y="421" font-family="Arial, sans-serif" font-size="22" fill="#101820">+ cost(): int</text>
-<text x="780" y="260" font-family="Arial, sans-serif" font-size="20" fill="#101820">1 snapshot</text>
-<text x="850" y="320" font-family="Arial, sans-serif" font-size="20" fill="#101820">1</text>
-<text x="845" y="590" font-family="Arial, sans-serif" font-size="20" fill="#101820">father 1</text>
-<text x="34" y="807" font-family="Arial, sans-serif" font-size="22" fill="#101820">Треугольник - наследование; стрелка - ассоциация; пунктир - зависимость.</text>
+<polyline points="700,250 700,223" fill="none" stroke="#334155" stroke-width="1.6"/>
+<polygon points="700,223 692.0,238.0 708.0,238.0" fill="white" stroke="#334155" stroke-width="1.6"/>
+<polyline points="240,540 240,515 700,515 700,487" fill="none" stroke="#334155" stroke-width="1.6"/>
+<polygon points="700,487 692.0,502.0 708.0,502.0" fill="white" stroke="#334155" stroke-width="1.6"/>
+<polyline points="700,540 700,515 700,515 700,487" fill="none" stroke="#334155" stroke-width="1.6"/>
+<polygon points="700,487 692.0,502.0 708.0,502.0" fill="white" stroke="#334155" stroke-width="1.6"/>
+<polyline points="1190,540 1190,515 700,515 700,487" fill="none" stroke="#334155" stroke-width="1.6"/>
+<polygon points="700,487 692.0,502.0 708.0,502.0" fill="white" stroke="#334155" stroke-width="1.6"/>
+<polyline points="930,310 1080,310" fill="none" stroke="#334155" stroke-width="1.6"/>
+<polygon points="1080,310 1069.0,305.0 1069.0,315.0" fill="#334155" stroke="#334155" stroke-width="1.6"/>
+<rect x="470" y="20" width="460" height="203" fill="white" stroke="#334155" stroke-width="1.6"/>
+<rect x="471" y="21" width="458" height="71" fill="#e8eff6"/>
+<text x="485" y="45" font-family="Arial, sans-serif" font-size="20" fill="#101820">«abstract»</text>
+<text x="485" y="78" font-family="Arial, sans-serif" font-size="26" fill="#101820" font-weight="bold">WorldObject</text>
+<polyline points="470,92 930,92" fill="none" stroke="#334155" stroke-width="1.6"/>
+<text x="484" y="120" font-family="Arial, sans-serif" font-size="22" fill="#101820">- id, name: String</text>
+<text x="484" y="154" font-family="Arial, sans-serif" font-size="22" fill="#101820">- history: ArrayList&lt;StoryEvent&gt;</text>
+<polyline points="470,167 930,167" fill="none" stroke="#334155" stroke-width="1.6"/>
+<text x="484" y="201" font-family="Arial, sans-serif" font-size="22" fill="#101820"># recordEvent(String)</text>
+<rect x="470" y="250" width="460" height="237" fill="white" stroke="#334155" stroke-width="1.6"/>
+<rect x="471" y="251" width="458" height="71" fill="#e8eff6"/>
+<text x="485" y="275" font-family="Arial, sans-serif" font-size="20" fill="#101820">«abstract»</text>
+<text x="485" y="308" font-family="Arial, sans-serif" font-size="26" fill="#101820" font-weight="bold">Person</text>
+<polyline points="470,322 930,322" fill="none" stroke="#334155" stroke-width="1.6"/>
+<text x="484" y="350" font-family="Arial, sans-serif" font-size="22" fill="#101820">- condition / emotion</text>
+<text x="484" y="384" font-family="Arial, sans-serif" font-size="22" fill="#101820">- location / boat</text>
+<polyline points="470,397 930,397" fill="none" stroke="#334155" stroke-width="1.6"/>
+<text x="484" y="431" font-family="Arial, sans-serif" font-size="22" fill="#101820">+ approach(Boat)</text>
+<text x="484" y="465" font-family="Arial, sans-serif" font-size="22" fill="#101820">+ reactToReunion()</text>
+<rect x="40" y="540" width="400" height="212" fill="white" stroke="#334155" stroke-width="1.6"/>
+<rect x="41" y="541" width="398" height="46" fill="#e8eff6"/>
+<text x="55" y="574" font-family="Arial, sans-serif" font-size="26" fill="#101820" font-weight="bold">Robinson</text>
+<polyline points="40,587 440,587" fill="none" stroke="#334155" stroke-width="1.6"/>
+<text x="54" y="615" font-family="Arial, sans-serif" font-size="22" fill="#101820">- knownFamily: FamilyRelation</text>
+<polyline points="40,628 440,628" fill="none" stroke="#334155" stroke-width="1.6"/>
+<text x="54" y="662" font-family="Arial, sans-serif" font-size="22" fill="#101820">+ orderRelease(...)</text>
+<text x="54" y="696" font-family="Arial, sans-serif" font-size="22" fill="#101820">+ adviseMassage(Friday)</text>
+<text x="54" y="730" font-family="Arial, sans-serif" font-size="22" fill="#101820">+ learnFamily(...)</text>
+<rect x="500" y="540" width="420" height="212" fill="white" stroke="#334155" stroke-width="1.6"/>
+<rect x="501" y="541" width="418" height="46" fill="#e8eff6"/>
+<text x="515" y="574" font-family="Arial, sans-serif" font-size="26" fill="#101820" font-weight="bold">Friday</text>
+<polyline points="500,587 920,587" fill="none" stroke="#334155" stroke-width="1.6"/>
+<text x="514" y="615" font-family="Arial, sans-serif" font-size="22" fill="#101820">- recognized / expressions</text>
+<text x="514" y="649" font-family="Arial, sans-serif" font-size="22" fill="#101820">- plannedCare / careRecipient</text>
+<polyline points="500,662 920,662" fill="none" stroke="#334155" stroke-width="1.6"/>
+<text x="514" y="696" font-family="Arial, sans-serif" font-size="22" fill="#101820">+ celebrate / explainRelationship</text>
+<text x="514" y="730" font-family="Arial, sans-serif" font-size="22" fill="#101820">+ jumpInto / jumpOut / performCare</text>
+<rect x="990" y="540" width="410" height="178" fill="white" stroke="#334155" stroke-width="1.6"/>
+<rect x="991" y="541" width="408" height="46" fill="#e8eff6"/>
+<text x="1005" y="574" font-family="Arial, sans-serif" font-size="26" fill="#101820" font-weight="bold">Father</text>
+<polyline points="990,587 1400,587" fill="none" stroke="#334155" stroke-width="1.6"/>
+<text x="1004" y="615" font-family="Arial, sans-serif" font-size="22" fill="#101820">- free / seated / encouragements</text>
+<polyline points="990,628 1400,628" fill="none" stroke="#334155" stroke-width="1.6"/>
+<text x="1004" y="662" font-family="Arial, sans-serif" font-size="22" fill="#101820">+ release / acceptSip</text>
+<text x="1004" y="696" font-family="Arial, sans-serif" font-size="22" fill="#101820">+ sitUp / receiveCare</text>
+<rect x="1080" y="250" width="330" height="169" fill="white" stroke="#334155" stroke-width="1.6"/>
+<rect x="1081" y="251" width="328" height="71" fill="#e8eff6"/>
+<text x="1095" y="275" font-family="Arial, sans-serif" font-size="20" fill="#101820">«record»</text>
+<text x="1095" y="308" font-family="Arial, sans-serif" font-size="26" fill="#101820" font-weight="bold">Condition</text>
+<polyline points="1080,322 1410,322" fill="none" stroke="#334155" stroke-width="1.6"/>
+<text x="1094" y="350" font-family="Arial, sans-serif" font-size="22" fill="#101820">energy, stiffness: int</text>
+<polyline points="1080,363 1410,363" fill="none" stroke="#334155" stroke-width="1.6"/>
+<text x="1094" y="397" font-family="Arial, sans-serif" font-size="22" fill="#101820">+ recover(int, int)</text>
+<rect x="40" y="250" width="350" height="203" fill="white" stroke="#334155" stroke-width="1.6"/>
+<rect x="41" y="251" width="348" height="71" fill="#e8eff6"/>
+<text x="55" y="275" font-family="Arial, sans-serif" font-size="20" fill="#101820">«enum»</text>
+<text x="55" y="308" font-family="Arial, sans-serif" font-size="26" fill="#101820" font-weight="bold">JoyAction</text>
+<polyline points="40,322 390,322" fill="none" stroke="#334155" stroke-width="1.6"/>
+<text x="54" y="350" font-family="Arial, sans-serif" font-size="22" fill="#101820">CRY, LAUGH, DANCE</text>
+<text x="54" y="384" font-family="Arial, sans-serif" font-size="22" fill="#101820">WAVE, HIT_HEAD, HIT_FACE</text>
+<polyline points="40,397 390,397" fill="none" stroke="#334155" stroke-width="1.6"/>
+<text x="54" y="431" font-family="Arial, sans-serif" font-size="22" fill="#101820">+ perform(Friday)</text>
+<text x="40" y="815" font-family="Arial, sans-serif" font-size="20" fill="#101820">Треугольник - наследование; стрелка - ассоциация. Дополнительные состояния показаны на виде 4.</text>
 </svg>
