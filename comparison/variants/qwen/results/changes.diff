@@ -24,7 +24,7 @@
 +
 +        // 4. Списание (атомарно для однопоточной модели)
          volume -= amount;
--        log.event(user.name() + " расходует " + amount + " мл рома; осталось " + volume + " мл.");
+-        recordEvent(user.name() + " расходует " + amount + " мл рома; осталось " + volume + " мл.");
 +
 +        // 5. Журнал (строго после успешного изменения состояния)
 +        log.event(formatterConsume(user, amount, volume));
