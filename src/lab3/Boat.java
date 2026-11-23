@@ -20,16 +20,23 @@ public final class Boat extends WorldObject {
     public void board(Person person) {
         Objects.requireNonNull(person);
         if (contains(person)) return;
+        if (person.location() == Location.IN_BOAT) {
+            throw new IllegalStateException("Персонаж уже находится в другой лодке");
+        }
         if (passengers.size() == capacity) {
             throw new IllegalStateException("В лодке нет свободного места");
         }
         passengers.add(person);
-        log.event(person.name() + " оказывается в лодке; пассажиров=" + passengers.size());
+        person.embark(this);
+        recordEvent(person.name() + " оказывается в лодке; пассажиров=" + passengers.size());
     }
 
     public void leave(Person person) {
-        if (passengers.remove(person)) {
-            log.event(person.name() + " выходит из лодки на берег; пассажиров=" + passengers.size());
+        int index = passengers.indexOf(person);
+        if (index >= 0) {
+            Person passenger = passengers.remove(index);
+            passenger.disembark(this);
+            recordEvent(passenger.name() + " выходит из лодки на берег; пассажиров=" + passengers.size());
         }
     }
 

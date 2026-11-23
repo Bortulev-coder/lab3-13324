@@ -21,7 +21,7 @@ public final class RumBottle extends WorldObject {
     public void transfer(Person from, Person to) {
         requireOwner(from);
         owner = Objects.requireNonNull(to);
-        log.event(from.name() + " передаёт бутылочку: " + to.name() + ".");
+        recordEvent(from.name() + " передаёт бутылочку: " + to.name() + ".");
     }
 
     public void consume(Person user, int amount) throws InsufficientRumException {
@@ -29,7 +29,7 @@ public final class RumBottle extends WorldObject {
         if (amount <= 0) throw new IllegalArgumentException("Порция должна быть положительной");
         if (amount > volume) throw new InsufficientRumException(amount, volume);
         volume -= amount;
-        log.event(user.name() + " расходует " + amount + " мл рома; осталось " + volume + " мл.");
+        recordEvent(user.name() + " расходует " + amount + " мл рома; осталось " + volume + " мл.");
     }
 
     private void requireOwner(Person person) {
