@@ -1,4 +1,4 @@
-PASS: 59 checks
+PASS: 104 checks
 
 PASS: 12 shared contract cases
 LOG_USES_USER_NAME=false

@@ -2,33 +2,33 @@
   {
     "variant": "main",
     "compilation": "PASS",
-    "model_checks": 59,
+    "model_checks": 104,
     "contract_cases": 12,
     "alias_logs_user": true,
-    "rum_bottle_sha256": "9bccdd3bd987c495f60b93833fb3407d1e2ffd567403852486d37e00dc0e0adc"
+    "rum_bottle_sha256": "302bedba3e9af22d6510e1cf875df850e8d2b484e5c02fc53ecee6df56c135a6"
   },
   {
     "variant": "gigachat",
     "compilation": "PASS",
-    "model_checks": 59,
+    "model_checks": 104,
     "contract_cases": 12,
     "alias_logs_user": true,
-    "rum_bottle_sha256": "141aba9a4b39113fe9221845530466ef8e8b88fa33d9439ca4945125142abb2c"
+    "rum_bottle_sha256": "077e5682b74735745cc87881289b6e11929cb322b8677cdca291c502b9bb10b7"
   },
   {
     "variant": "deepseek",
     "compilation": "PASS",
-    "model_checks": 59,
+    "model_checks": 104,
     "contract_cases": 12,
     "alias_logs_user": false,
-    "rum_bottle_sha256": "c847254c2bf30db5c068a425dde222e62509eec347564dc12cceef52fd5788b8"
+    "rum_bottle_sha256": "2b4de9f0d8343f7a5a60e321cd36379f17700729c17a96261c8b66be8becd6b0"
   },
   {
     "variant": "qwen",
     "compilation": "PASS",
-    "model_checks": 59,
+    "model_checks": 104,
     "contract_cases": 12,
     "alias_logs_user": true,
-    "rum_bottle_sha256": "c71dc07d6910ed1a5d08e7acc258887be729b889516f4bb9e9348b7ee72a0e32"
+    "rum_bottle_sha256": "93f8ca6e202cb23354a91efe8a81edc0c45f82a6a530b41b0b2cc4b72a1d2370"
   }
 ]
