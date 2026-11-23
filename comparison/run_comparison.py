@@ -6,6 +6,7 @@ import json
 import os
 import difflib
 import hashlib
+import re
 
 root = Path(__file__).resolve().parents[1]
 here = Path(__file__).resolve().parent
@@ -80,7 +81,8 @@ for variant in ['main', 'gigachat', 'deepseek', 'qwen']:
     text = '\n'.join(log)
     assert 'LOG_USES_USER_NAME='+str(variant!='deepseek').lower() in text
     (results/(variant+'.txt')).write_text(text,encoding='utf-8')
-    records.append({'variant':variant,'compilation':'PASS','model_checks':59,
+    model_checks = int(re.search(r'PASS: (\d+) checks', text).group(1))
+    records.append({'variant':variant,'compilation':'PASS','model_checks':model_checks,
                     'contract_cases':12,'alias_logs_user':variant!='deepseek',
                     'rum_bottle_sha256':hashlib.sha256(actual.encode('utf-8')).hexdigest()})
     print(variant+': '+text.splitlines()[0]+'; '+text.splitlines()[2])
