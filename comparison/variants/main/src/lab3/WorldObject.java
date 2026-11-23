@@ -1,12 +1,15 @@
 package lab3;
 
 import java.util.Objects;
+import java.util.ArrayList;
+import java.util.List;
 
 /** Идентичность сущности не зависит от её изменяемого состояния. */
 public abstract class WorldObject {
     private final String id;
     private final String name;
     protected final StoryLog log;
+    private final ArrayList<StoryEvent> history = new ArrayList<>();
 
     protected WorldObject(String id, String name, StoryLog log) {
         if (id == null || id.isBlank() || name == null || name.isBlank()) {
@@ -18,6 +21,14 @@ public abstract class WorldObject {
     }
 
     public final String name() { return name; }
+    public final List<StoryEvent> history() { return List.copyOf(history); }
+
+    protected final void recordEvent(String message) {
+        StoryEvent event = new StoryEvent(message, describeState());
+        history.add(event);
+        StoryNarrator.publish(log, event);
+    }
+
     protected abstract String describeState();
 
     @Override

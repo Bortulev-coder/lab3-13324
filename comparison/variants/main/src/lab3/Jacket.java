@@ -9,7 +9,7 @@ public final class Jacket extends WorldObject {
     public void open() {
         if (!open) {
             open = true;
-            log.event("Пятница распахивает куртку, чтобы прижать отца к груди.");
+            recordEvent("Пятница распахивает куртку, чтобы прижать отца к груди.");
         }
     }
 

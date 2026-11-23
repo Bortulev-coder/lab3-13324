@@ -7,8 +7,12 @@ import java.util.Random;
 /** Создаёт новый мир при каждом запуске; последовательность действий отделена от сущностей. */
 public final class Scenario {
     private final StoryLog log;
+    private final StoryNarrator narrator;
 
-    public Scenario(StoryLog log) { this.log = Objects.requireNonNull(log); }
+    public Scenario(StoryLog log) {
+        this.log = Objects.requireNonNull(log);
+        narrator = new StoryNarrator(log);
+    }
 
     public void run(ScenarioConfig config) {
         Random random = new Random(config.seed());
@@ -18,40 +22,39 @@ public final class Scenario {
         Friday friday = new Friday("friday", config.fridayEnergy(), father, jacket, log);
         Boat boat = new Boat("boat", config.capacity(), log);
         RumBottle bottle = new RumBottle("rum", config.rum(), robinson, log);
-        List<Person> people = List.of(robinson, friday, father);
 
-        log.event("Вариант 13324. " + config);
+        narrator.begin(config);
         boat.board(father);
-        log.event("Пятница подходит к лодке у самого берега.");
+        friday.approach(boat);
         robinson.orderRelease(friday, father);
         bottle.transfer(robinson, friday);
         try {
             friday.giveSip(father, bottle);
         } catch (InsufficientRumException exception) {
-            log.event(exception.getMessage() + ". Пятница поддерживает пленника добрым словом.");
+            friday.comfort(father, exception);
         }
         father.sitUp();
         if (friday.recognize(father, config.daylight())) {
-            // Динамическая диспетчеризация: одна операция, три разных реакции.
-            for (Person person : people) person.reactToReunion();
+            // Динамическая диспетчеризация: общая операция реакции для персонажей.
+            for (Person person : List.of(friday, father)) person.reactToReunion();
             friday.celebrate(random);
             friday.jumpAround(boat, random);
             friday.calmDown();
+            friday.explainRelationship(robinson);
+            Person witness = robinson;
+            witness.reactToReunion();
             friday.embrace();
         } else {
-            log.event("Встреча пока не узнана; Пятница помогает незнакомому пленнику.");
+            friday.offerHelp(father);
         }
-        robinson.adviseMassage();
+        robinson.adviseMassage(friday);
         try {
-            friday.massage(father, bottle, random);
+            friday.performCare(father, bottle, random);
         } catch (InsufficientRumException exception) {
-            log.event(exception.getMessage() + ". Выбран уход без рома.");
+            friday.chooseDryCare(exception);
             friday.massageWithoutRum(father);
         }
         father.sitUp();
-        log.event("Итоговое состояние мира:");
-        for (WorldObject object : List.of(robinson, friday, father, boat, bottle, jacket)) {
-            log.event(object.toString());
-        }
+        narrator.describe(List.of(robinson, friday, father, boat, bottle, jacket));
     }
 }
