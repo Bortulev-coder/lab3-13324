@@ -1,7 +1,5 @@
-Picked up _JAVA_OPTIONS: -XX:MaxHeapSize=1G -XX:MaxMetaspaceSize=128m
-openjdk version "17.0.12" 2024-07-16
-OpenJDK Runtime Environment (build 17.0.12+7-1)
-OpenJDK 64-Bit Server VM (build 17.0.12+7-1, mixed mode, sharing)
-Picked up _JAVA_OPTIONS: -XX:MaxHeapSize=1G -XX:MaxMetaspaceSize=128m
-javac 17.0.12
-FreeBSD 14.5-STABLE
+Picked up _JAVA_OPTIONS: -Xmx512m -XX:MaxMetaspaceSize=128m
+openjdk version "21.0.4" 2024-07-16
+OpenJDK Runtime Environment (build 21.0.4+7-1)
+OpenJDK 64-Bit Server VM (build 21.0.4+7-1, mixed mode, sharing)
+FreeBSD helios.cs.ifmo.ru 14.5-STABLE FreeBSD 14.5-STABLE ec3ebfaf9fd3 amd64 amd64
