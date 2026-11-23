@@ -1,7 +1,7 @@
 --- original/RumBottle.java
 +++ deepseek/RumBottle.java
 @@ -24,12 +24,31 @@
-         log.event(from.name() + " передаёт бутылочку: " + to.name() + ".");
+         recordEvent(from.name() + " передаёт бутылочку: " + to.name() + ".");
      }
  
 -    public void consume(Person user, int amount) throws InsufficientRumException {
@@ -28,7 +28,7 @@
 +
 +        // 4. Успешное списание.
          volume -= amount;
--        log.event(user.name() + " расходует " + amount + " мл рома; осталось " + volume + " мл.");
+-        recordEvent(user.name() + " расходует " + amount + " мл рома; осталось " + volume + " мл.");
 +
 +        // 5. Журналирование только после успешного списания.
 +        log.event(owner.name()
