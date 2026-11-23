@@ -1,7 +1,7 @@
 --- original/RumBottle.java
 +++ gigachat/RumBottle.java
 @@ -24,12 +24,34 @@
-         log.event(from.name() + " передаёт бутылочку: " + to.name() + ".");
+         recordEvent(from.name() + " передаёт бутылочку: " + to.name() + ".");
      }
  
 -    public void consume(Person user, int amount) throws InsufficientRumException {
@@ -27,7 +27,7 @@
 +
 +        // 4. Списание
          volume -= amount;
--        log.event(user.name() + " расходует " + amount + " мл рома; осталось " + volume + " мл.");
+-        recordEvent(user.name() + " расходует " + amount + " мл рома; осталось " + volume + " мл.");
 +
 +        // 5. Журнал (только при успехе)
 +        log.event(formatterConsume(user, amount, volume));
